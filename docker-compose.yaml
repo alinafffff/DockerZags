@@ -2,12 +2,15 @@ version: '3'
 services:
   postgres:
     image: postgres
-    ports:
-      - "5434:5432"
     environment:
       POSTGRES_DB: zags
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+
   spring:
     build:
       context: .
