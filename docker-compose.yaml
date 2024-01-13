@@ -2,6 +2,7 @@ version: '3'
 services:
   postgres:
     image: postgres
+    build: ./
     environment:
       POSTGRES_DB: zags
       POSTGRES_USER: postgres
