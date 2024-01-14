@@ -167,13 +167,13 @@ COPY public.certificates (id, status, data, act_number, zags, id_person, id_faci
 --
 
 COPY public.facilities (id, type, tariff) FROM stdin;
-1	Ðåãèñòðàöèÿ áðàêà	350
-2	Ðåãèñòðàöèÿ ðàñòîðæåíèÿ áðàêà	350
-3	Ðåãèñòðàöèÿ ðîæäåíèÿ	250
-4	Ðåãèñòðàöèÿ ñìåðòè	250
-5	Ðåãèñòðàöèÿ ñìåíû èìåíè	450
-6	Ðåãèñòðàöèÿ óñòàíîâëåíèÿ îòöîâñòâà	250
-7	Ðåãèñòðàöèÿ óñûíîâëåíèÿ/óäî÷åðåíèÿ	250
+1   Marriage registration  350
+2  Registration divorce  350
+3  Birth registration 250
+4  Death registration  250
+5  Registration name change  450
+6  Registration paternity establishment  250
+7  Registration adoption  250
 \.
 
 
