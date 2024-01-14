@@ -297,4 +297,3 @@ ALTER TABLE ONLY public.certificates
 
 
 
-
