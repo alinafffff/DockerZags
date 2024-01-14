@@ -20,7 +20,7 @@ public class Certificates {
     private int id;
     @Column(name = "status")
     private final String status = "Оплачена";
-    @Column(name = "date")
+    @Column(name = "data")
     private final LocalDate date = LocalDate.now();
     @Column(name = "act_number")
     private final long actNumber = 1000000 + (int) (Math.random() * 99999999);

@@ -1,7 +1,7 @@
 CREATE TABLE certificates(
     id serial PRIMARY KEY,
     status varchar(50) NOT NULL,
-    date date NOT NULL,
+    data date NOT NULL,
 	act_number int NOT NULL,
     zags varchar(50) NOT NULL,
     id_person int NOT NULL,
