@@ -186,6 +186,7 @@ COPY public.facilities (id, type, tariff) FROM stdin;
 --
 
 COPY public.person (id, name, surname, patronymic, birthday, passport_series, passport_number, snils, email) FROM stdin;
+1	Алина	Федорова	Анатольевна	28-09-2003	4747	474747	83493849	alfasar1@yandex.ru
 \.
 
 
