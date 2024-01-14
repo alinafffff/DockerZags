@@ -1,3 +1,21 @@
+CREATE TABLE person(
+	id int not null generated always as identity (increment by 1),
+	name varchar(50) NOT NULL,
+	surname varchar(50) NOT NULL,
+	patronymic varchar(50) NOT NULL,
+	birthday date NOT NULL,
+	passport_series int NOT NULL,
+	passport_number int NOT NULL,
+	snils varchar(50) NOT NULL,
+	email varchar(50) NOT NULL
+);
+
+CREATE TABLE facilities(
+	id int not null generated always as identity (increment by 1),
+	type varchar(50) NOT NULL,
+	tariff int NOT NULL
+);
+
 CREATE TABLE certificates(
     id int not null generated always as identity (increment by 1),
     status varchar(50) NOT NULL,
@@ -11,23 +29,6 @@ CREATE TABLE certificates(
 	FOREIGN KEY (id_facilities) REFERENCES facilities(id)
 );
 
-CREATE TABLE facilities(
-	id int not null generated always as identity (increment by 1),
-	type varchar(50) NOT NULL,
-	tariff int NOT NULL
-);
-
-CREATE TABLE person(
-	id int not null generated always as identity (increment by 1),
-	name varchar(50) NOT NULL,
-	surname varchar(50) NOT NULL,
-	patronymic varchar(50) NOT NULL,
-	birthday date NOT NULL,
-	passport_series int NOT NULL,
-	passport_number int NOT NULL,
-	snils varchar(50) NOT NULL,
-	email varchar(50) NOT NULL
-);
 
 CREATE TABLE role(
 	id int not null generated always as identity (increment by 1),
