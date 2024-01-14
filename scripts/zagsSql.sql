@@ -1,4 +1,5 @@
 CREATE TABLE certificates(
+    id int not null generated always as identity (increment by 1),
     status varchar(50) NOT NULL,
     data date NOT NULL,
 	act_number int NOT NULL,
@@ -11,11 +12,13 @@ CREATE TABLE certificates(
 );
 
 CREATE TABLE facilities(
+	id int not null generated always as identity (increment by 1),
 	type varchar(50) NOT NULL,
 	tariff int NOT NULL
 );
 
 CREATE TABLE person(
+	id int not null generated always as identity (increment by 1),
 	name varchar(50) NOT NULL,
 	surname varchar(50) NOT NULL,
 	patronymic varchar(50) NOT NULL,
@@ -27,6 +30,7 @@ CREATE TABLE person(
 );
 
 CREATE TABLE role(
+	id int not null generated always as identity (increment by 1),
 	role varchar(50) NOT NULL,
 	login varchar(50) NOT NULL,
 	password varchar(50) NOT NULL
